@@ -1,0 +1,127 @@
+ALUNO : JOÃO FELIPE REGIS SOUZA   TURMA: 441
+1)
+joaofelipe@joaofelipe-Inspiron-3442:~/Home$
+Encontro-me no diretório “Home”
+
+2) Foi utilizado o comando “mkdir” para a criação de um novo diretório. Na seguinte ordem :
+
+joaofelipe@joaofelipe-Inspiron-3442:~/Home$ mkdir my_test
+joaofelipe@joaofelipe-Inspiron-3442:~/Home$ cd my_test
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test$ mkdir my_work
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test$ mkdir job1
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test$ cd job1
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test/job1$ mkdir task1
+
+3)
+Uitilizou-se “cd my_work” : 
+
+joaofelipe@joaofelipe-Inspiron-3442:~$ cd Home
+joaofelipe@joaofelipe-Inspiron-3442:~/Home$ ls
+my_test
+joaofelipe@joaofelipe-Inspiron-3442:~/Home$ cd my_test
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test$ ls
+job1  my_work
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test$ cd my_work
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test/my_work$ 
+
+4) Foi utilizado o comando “nano” para a criação do arquivo “numbers”. Com o seguinte conteúdo :
+“
+ 10
+100
+50
+25
+1
+2
+”
+Comando :
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test/my_work$ nano 
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test/my_work$ ls
+numbers.txt
+ 
+5)
+Utilizei o comando “nano” para duplicar e renomear :
+
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test/my_work$ nano numbers.txt
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test/my_work$ ls
+numbers1.txt  numbers.txt
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test/my_work$ nano numbers.txt
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test/my_work$ ls
+numbers1.txt  numbers2.txt  numbers.txt
+
+
+
+
+6) Foi utilizado o comando cp com a argumantação “cp arquivo ~/destino”
+
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test/my_work$ cp *.txt ~/Home/my_test/job1/task1
+
+7)
+Caminho para task1:
+
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test/my_work$ cd
+joaofelipe@joaofelipe-Inspiron-3442:~$ cd Home
+joaofelipe@joaofelipe-Inspiron-3442:~/Home$ cd my_test
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test$ cd job1
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test/job1$ cd task1
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test/job1/task1$ 
+
+Comando utilizado para mostrar os detalhes dos arquivos do diretório: la -ls
+
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test/job1/task1$ la -ls
+total 12
+4 -rw-rw-r-- 1 joaofelipe joaofelipe 20 Abr  7 20:59 numbers1.txt
+4 -rw-rw-r-- 1 joaofelipe joaofelipe 20 Abr  7 20:59 numbers2.txt
+4 -rw-rw-r-- 1 joaofelipe joaofelipe 20 Abr  7 20:59 numbers.txt
+
+8) Converteu-se o código –rwxr-xr-x para 755, assim foi atribuido na argumentação do código.
+
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test/job1/task1$ chmod 755 numbers.txt 
+
+9) Converteu-se o código -rw-r—r-- para 644, assim foi atribuido na argumentação do código.
+
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test/job1/task1$ chmod 644 numbers1.txt 
+
+10) Foi utilizado o “cp -r” para copiar o diretório à pasta de usuário.
+
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test/job1$ cp -r task1 /home/joaofelipe
+
+11) O comando “mv” foi utilizado para renomear.
+
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test$ mv my_work my_work1
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test$ ls
+job1  my_work1
+
+12) Utilizou-se o comando “rm -r” para excluir a pasta “task1’
+
+joaofelipe@joaofelipe-Inspiron-3442:~/Home/my_test/job1$ rm -r task1
+
+
+13)Usou-se cd / para ir ao diretório principal
+
+joaofelipe@joaofelipe-Inspiron-3442:/$ cd bin
+   
+Foi utilizado o código “ls. > /destino”
+
+joaofelipe@joaofelipe-Inspiron-3442:/bin$ ls. > /home/joaofelipe/listabin.txt
+
+
+14) Comando “clear” limpa todos a tela do terminal.
+
+
+15) O comando “top” lista os processos do linux.
+
+16)
+
+!#/bin/bash
+
+echo -e "INFORME SEU NOME" 
+read n
+echo -e "INFORME SEU SOBRENOME" 
+read sn
+echo -e "INFORME SEU SEXO" 
+read s
+echo -e "INFORME SEU IDADE"
+read id
+echo -e "INFORME SEU GRAU DE INSTRUCAO"
+read inst
+echo " $n $sn sexo $s e com $id anos de idade apresenta grau $inst de instrução" 
